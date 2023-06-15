@@ -1,0 +1,17 @@
+Component2 As CanvasComponent:
+    Fill: =RGBA(209, 232, 178, 1)
+    Height: =85
+    Width: =Max(App.Width, App.DesignWidth)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height
+        Size: =21
+        Text: ="NonConformity"
+        Width: =Parent.Width
+        ZIndex: =2
+

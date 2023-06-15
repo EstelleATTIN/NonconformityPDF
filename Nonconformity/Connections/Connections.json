@@ -1,0 +1,106 @@
+{
+  "1101cd91-c409-43b1-baec-54bb166f286c": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1101cd91-c409-43b1-baec-54bb166f286c"
+  },
+  "4440e015-4373-4cc7-8a6b-dedd3ebb4ded": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Utilisateurs d’Office\u00A0365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Utilisateursd’Office365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4440e015-4373-4cc7-8a6b-dedd3ebb4ded"
+  },
+  "89087d99-a5b9-4fd4-a318-71c7cd9d2d8b": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://takkaio.sharepoint.com/sites/GestiondesNC": {
+        "dataSources": {
+          "List of Nonconformity": {
+            "tableName": "0d087072-96bf-48dd-8168-3ebbb666fd79"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "List of Nonconformity"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "89087d99-a5b9-4fd4-a318-71c7cd9d2d8b"
+  },
+  "c879c0ab-4ed7-48ac-bb44-48269c33af62": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://takkaio.sharepoint.com/sites/GestiondesNC": {
+        "dataSources": {
+          "ActionContaimnent": {
+            "tableName": "82fc7836-4818-4993-8a1c-79438425a676"
+          },
+          "Admin Home Page": {
+            "tableName": "b0cf7045-9adf-496f-8184-80674c46d764"
+          },
+          "AnalyseNC": {
+            "tableName": "da2c2630-8b6a-49ae-bb6c-3f517a078693"
+          },
+          "ClossureOfNC": {
+            "tableName": "420737cf-514a-4b1e-93bd-36d6fd177183"
+          },
+          "DiffusionNC": {
+            "tableName": "71b25b9d-27d8-486e-ab68-53e7da4bcc2b"
+          },
+          "Records of Nonconformity": {
+            "tableName": "683a68ef-0af7-4c03-8003-6ed1ca2f0ef5"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Admin Home Page",
+      "Records of Nonconformity",
+      "AnalyseNC",
+      "ClossureOfNC",
+      "DiffusionNC",
+      "ActionContaimnent"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c879c0ab-4ed7-48ac-bb44-48269c33af62"
+  }
+}

@@ -1,0 +1,138 @@
+LoginMananger As screen:
+    ImagePosition: =ImagePosition.Fill
+
+    HtmlText1_1 As htmlViewer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =640
+        HtmlText: |-
+            =" 
+            <html>
+            <head>
+                <title> Login</title>
+                <link rel='stylesheet' type='text/css' href=''>
+            </head>
+            <body>
+                <div style='max-width: 700px;
+                max-height: 1500px;
+                margin: 0;
+                text-align: center;
+                padding: 50px;
+                border: ;
+                border-radius: ;
+                margin-top: 0px;
+                margin-bottom: 10px;'>
+                    <h1 style='margin-bottom: 30px;'>Nonconformity System</h1>
+                    <form action='' method='post'>
+                        
+                        
+                    </form>
+                </div>
+                <script src='script.js'>
+                    const form = document.querySelector('form');
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const username = form.username.value;
+                const password = form.password.value;
+                try {
+                    const response = await fetch('/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username, password })
+                    });
+                    const data = await response.json();
+                    if (data.success) {
+                        window.location.href = '/dashboard';
+                    } else {
+                        alert('Invalid username or password');
+                    }
+                } catch (error) {
+                    console.error(error);
+                    alert('An error occurred. Please try again.');
+                }
+            });
+                </script>
+            </body>
+            </html>
+            "
+        Size: =24
+        Width: =603
+        X: =531
+        ZIndex: =1
+
+    TextInput1_1 As text:
+        BorderColor: =RGBA(232, 244, 217, 1)
+        BorderThickness: =4
+        Default: =""
+        Height: =45
+        Size: =20
+        Width: =530
+        X: =547
+        Y: =363
+        ZIndex: =3
+
+    TextInput3_1 As text:
+        BorderColor: =RGBA(232, 244, 217, 1)
+        BorderThickness: =4
+        Default: =""
+        Height: =51
+        Mode: =TextMode.Password
+        Size: =21
+        Width: =530
+        X: =547
+        Y: =482
+        ZIndex: =4
+
+    Button2_1 As button:
+        BorderColor: =RGBA(141, 198, 63, 1)
+        Fill: =RGBA(141, 198, 63, 1)
+        Height: =57
+        OnSelect: |+
+            =If(
+                !IsBlank(
+                    LookUp(
+                        'Admin Home Page',
+                        Titre = TextInput1_1.Text And Passeword = TextInput3_1.Text).Titre
+                ),
+                Navigate(Screen3),
+                Navigate(Screen5)
+            )
+            
+        Size: =24
+        Text: ="Login"
+        Width: =141
+        X: =762
+        Y: =560
+        ZIndex: =5
+
+    Container1_1 As groupContainer.manualLayoutContainer:
+        Height: =640
+        Width: =531
+        ZIndex: =6
+
+        Image1_1 As image:
+            Height: =640
+            Image: ='img10-2-1-300x152'
+            ImagePosition: =ImagePosition.Fill
+            Width: =531
+            ZIndex: =1
+
+    Label5 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Username:"
+        Width: =560
+        X: =552
+        Y: =285
+        ZIndex: =7
+
+    Label6 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Password:"
+        Width: =560
+        X: =547
+        Y: =422
+        ZIndex: =8
+

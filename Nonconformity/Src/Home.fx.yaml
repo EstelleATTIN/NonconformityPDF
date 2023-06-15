@@ -1,0 +1,69 @@
+Home As screen:
+
+    HtmlText2 As htmlViewer:
+        Height: =640
+        HtmlText: |-
+            =" 
+            <html>
+            <head>
+                <title> Login</title>
+                <link rel='stylesheet' type='text/css' href=''>
+            </head>
+            <body>
+                <div style='max-width: 700px;
+                max-height: 1500px;
+                margin: 0;
+                text-align: center;
+                padding: 50px;
+                border: ;
+                border-radius: ;
+                margin-top: 0px;
+                margin-bottom: 10px;'>
+                    <h1 style='margin-bottom: 30px;'>Nonconformity System</h1>
+                    
+            </body>
+            </html>
+            "
+        Size: =21
+        Width: =Parent.Width
+        X: =499
+        ZIndex: =1
+
+    Button7 As button:
+        BorderColor: =RGBA(141, 198, 63, 1)
+        Fill: =RGBA(141, 198, 63, 1)
+        Height: =70
+        OnSelect: =Navigate(LoginEmployee)
+        Size: =24
+        Text: ="Employee Login"
+        Width: =427
+        X: =596
+        Y: =367
+        ZIndex: =2
+
+    Button8 As button:
+        Fill: =RGBA(141, 198, 63, 1)
+        Height: =70
+        OnSelect: =Navigate(LoginMananger)
+        Size: =24
+        Text: ="Manager Login"
+        Width: =427
+        X: =596
+        Y: =514
+        ZIndex: =3
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Height: =640
+        Width: =499
+        ZIndex: =4
+
+        IframePCF1 As IframePCF:
+            DisplayMode: =DisplayMode.Edit
+            Height: =640
+            src: |-
+                ="https://africanppc.com/"
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+

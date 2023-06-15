@@ -1,0 +1,565 @@
+DetailScreen As screen:
+    Fill: =RGBA(241, 244, 249, 1)
+
+    Viue As button:
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(219, 219, 219, 1)
+        Color: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =
+        DisabledFill: =
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =604
+        HoverBorderColor: =
+        HoverColor: =
+        HoverFill: =
+        PressedBorderColor: =
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: =""
+        Width: =1038
+        X: =51
+        Y: =28
+        ZIndex: =2
+
+    Vue1 As button:
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Color: =
+        DisabledBorderColor: =
+        DisabledColor: =
+        DisabledFill: =
+        Fill: =RGBA(187, 221, 140, 1)
+        Height: =578
+        HoverBorderColor: =
+        HoverColor: =
+        HoverFill: =
+        PressedBorderColor: =
+        PressedColor: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: =""
+        Width: =305
+        X: =75
+        Y: =40
+        ZIndex: =3
+
+    Vue2 As button:
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(127, 178, 57, 1)
+        DisabledBorderColor: =
+        DisabledColor: =
+        DisabledFill: =
+        Fill: =RGBA(99, 139, 44, 1)
+        Height: =167
+        HoverBorderColor: =
+        HoverColor: =
+        HoverFill: =
+        PressedBorderColor: =
+        PressedColor: =
+        Size: =24
+        Text: =""
+        Width: =280
+        X: =88
+        Y: =392
+        ZIndex: =4
+
+    Image4 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderThickness: =2
+        Height: =94
+        Image: =User().Image
+        RadiusBottomLeft: =182
+        RadiusBottomRight: =182
+        RadiusTopLeft: =182
+        RadiusTopRight: =182
+        Width: =89
+        X: =101
+        Y: =465
+        ZIndex: =5
+
+    Label8 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Size: =15
+        Text: =User().FullName
+        Width: =156
+        X: =212
+        Y: =477
+        ZIndex: =6
+
+    Label10 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Font: =Font.'Lato Light'
+        Height: =82
+        Size: =12
+        Text: ="Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum  "
+        Width: =254
+        X: =101
+        Y: =395
+        ZIndex: =7
+
+    Icon2 As icon.More:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.More
+        X: =196
+        Y: =547
+        ZIndex: =8
+
+    Label11 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Bold
+        Height: =84
+        Size: =17
+        Text: ="lorem ipsum lorem ipsum lorem ipsum"
+        Width: =312
+        X: =88
+        Y: =128
+        ZIndex: =9
+
+    Label12 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =16
+        Text: ="DETAIL"
+        Width: =560
+        X: =88
+        Y: =25
+        ZIndex: =10
+
+    Label13 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Height: =70
+        Size: =10
+        Text: ="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum"
+        Width: =280
+        X: =88
+        Y: =226
+        ZIndex: =11
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =430
+        Width: =582
+        X: =420
+        Y: =115
+        ZIndex: =12
+
+        FormViewer1 As formViewer:
+            DataSource: ='List of Nonconformity'
+            Item: =DataTable1.Selected
+            Width: =640
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+            Title_DataCard2 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.Title
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"Title")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =640
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+                DataCardKey9 As label:
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =49
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Wrap: =false
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue9 As label:
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =49
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =Parent.Default
+                    Width: =235
+                    X: =395
+                    Y: =10
+                    ZIndex: =2
+
+            "'Nonconformity ID_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="No_x002d_conformityID"
+                Default: =ThisItem.'Nonconformity ID'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"No_x002d_conformityID")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =1
+                ZIndex: =2
+
+                DataCardKey10 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =48
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Width: =290
+                    Wrap: =false
+                    Y: =7
+                    ZIndex: =1
+
+                DataCardValue10 As label:
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =44
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =Parent.Default
+                    Width: =238
+                    X: =395
+                    ZIndex: =2
+
+            "'Transmitter Name_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Transmitter_x002d_Name"
+                Default: =ThisItem.'Transmitter Name'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"Transmitter_x002d_Name")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =2
+                ZIndex: =2
+
+                DataCardKey11 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =48
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Width: =286
+                    Wrap: =false
+                    X: =1
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue11 As label:
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =30
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =Parent.Default
+                    Width: =113
+                    X: =392
+                    Y: =10
+                    ZIndex: =2
+
+            "'Nonconformity Source_DataCard1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="NonconformitySource"
+                Default: =ThisItem.'Nonconformity Source'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"NonconformitySource")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Update: =DataCardValue12.Selected
+                Width: =640
+                X: =0
+                Y: =3
+                ZIndex: =2
+
+                DataCardKey12 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =48
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Width: =610
+                    Wrap: =false
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue12 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =28
+                    Items: =Choices([@'List of Nonconformity'].'Nonconformity Source')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices('List of Nonconformity'.'Nonconformity Source',DataCardValue12.SearchText)
+                    SelectMultiple: =false
+                    Size: =12
+                    Width: =109
+                    X: =395
+                    Y: =10
+                    ZIndex: =2
+
+                ErrorMessage9 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue12.Y + DataCardValue12.Height
+                    ZIndex: =3
+
+                StarVisible9 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey12.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey12.Y
+                    ZIndex: =4
+
+            "'Nonconformity Origin_DataCard1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="NonconformityOrigin"
+                Default: =ThisItem.'Nonconformity Origin'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"NonconformityOrigin")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Update: =DataCardValue13.Selected
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =2
+
+                DataCardKey13 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =48
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Width: =610
+                    Wrap: =false
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue13 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =30
+                    Items: =Choices([@'List of Nonconformity'].'Nonconformity Origin')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices('List of Nonconformity'.'Nonconformity Origin',DataCardValue13.SearchText)
+                    SelectMultiple: =false
+                    Size: =12
+                    Width: =109
+                    X: =392
+                    Y: =10
+                    ZIndex: =2
+
+                ErrorMessage10 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue13.Y + DataCardValue13.Height
+                    ZIndex: =3
+
+                StarVisible10 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey13.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey13.Y
+                    ZIndex: =4
+
+            "'Datte Logged_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="DatteLogged"
+                Default: =ThisItem.'Datte Logged'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"DatteLogged")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =5
+                ZIndex: =2
+
+                DataCardKey14 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =48
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Width: =608
+                    Wrap: =false
+                    X: =2
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue14 As label:
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =44
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =Parent.Default
+                    Width: =115
+                    X: =394
+                    Y: =4
+                    ZIndex: =2
+
+            "'Incident Area_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="IncidentArea"
+                Default: =ThisItem.'Incident Area'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"IncidentArea")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =6
+                ZIndex: =2
+
+                DataCardKey15 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =48
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Width: =252
+                    Wrap: =false
+                    X: =1
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue15 As label:
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =Parent.Default
+                    Width: =89
+                    X: =395
+                    ZIndex: =2
+
+            "'Incident description_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Descriptionoftheincident"
+                Default: =ThisItem.'Incident description'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'List of Nonconformity'],DataSourceInfo.DisplayName,"Descriptionoftheincident")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =7
+                ZIndex: =2
+
+                DataCardKey16 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(202, 202, 202, 1)
+                    Font: =Font.Verdana
+                    Height: =48
+                    Size: =12
+                    Text: =Parent.DisplayName
+                    Width: =328
+                    Wrap: =false
+                    X: =2
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue16 As label:
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =30
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =Parent.Default
+                    Width: =78
+                    X: =396
+                    Y: =10
+                    ZIndex: =2
+
+    Icon4 As icon.HorizontalLine:
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(241, 244, 249, 1)
+        Height: =42
+        Icon: =Icon.HorizontalLine
+        Width: =689
+        X: =380
+        Y: =128
+        ZIndex: =13
+
+    Button11 As button:
+        BorderColor: =
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Fill: =RGBA(84, 125, 42, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        HoverBorderColor: =
+        HoverFill: =
+        OnSelect: =Navigate(GestionNC)
+        Text: ="Manage"
+        Width: =648
+        X: =400
+        Y: =541
+        ZIndex: =14
+

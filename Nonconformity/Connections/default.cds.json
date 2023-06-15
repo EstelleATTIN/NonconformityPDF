@@ -1,0 +1,16 @@
+{
+  "components": [
+    {
+      "Capabilities": {
+        "PCFExternalServiceUsageAllowed": false
+      },
+      "ComponentName": "CustomControl",
+      "Identifier": "ya_btd.IframePCF",
+      "IdentifierType": 0
+    }
+  ],
+  "dataSources": {},
+  "instanceUrl": "https://orga8d8a05e.crm3.dynamics.com/",
+  "state": "Configured",
+  "webApiVersion": "v9.0"
+}

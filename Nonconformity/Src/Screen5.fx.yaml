@@ -1,0 +1,13 @@
+Screen5 As screen:
+
+    Component2_3 As Component2:
+
+    Label3 As label:
+        Height: =70
+        Size: =
+        Text: ="Connexion échoué"
+        Width: =Max(App.Width, App.DesignWidth)
+        X: =300
+        Y: =260
+        ZIndex: =2
+
